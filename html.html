@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+        <div class="row">
+            <h3> Avatar Choice </h3>
+            <button id="1">Avatar 1</button>
+            <button id="2">Avatar 2</button>
+            <button id="3">Avatar 3</button>
+            <button id="4">Avatar 4</button>
+            <button id="5">Avatar 5</button>
+            <button id="6">Avatar 6</button>
+        </div>
+        <button id="clear">CLEAR</button>
+    </div>
+</div>
+</div>
+<script>
+    const picture = document.querySelector('img');
+
+    const a = document.getElementById('1');
+    const b = document.getElementById('2');
+    const c = document.getElementById('3');
+    const d = document.getElementById('4');
+    const e = document.getElementById('5');
+    const f = document.getElementById('6');
+
+    const clearButton = document.getElementById('clear');
+
+    a.addEventListener('click', function(e){
+        picture.src = 'https://cdn1.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.jpg'    });
+
+    b.addEventListener('click', function(e){
+        picture.src = 'https://cdn2.vectorstock.com/i/1000x1000/20/76/man-avatar-profile-vector-21372076.jpg'    });
+
+    c.addEventListener('click', function(e){
+        picture.src = 'https://e7.pngegg.com/pngimages/122/453/png-clipart-computer-icons-user-profile-avatar-female-profile-heroes-head.png'    });
+
+    d.addEventListener('click', function(e){
+        picture.src = 'https://thumbs.dreamstime.com/b/businessman-icon-vector-male-avatar-profile-image-profile-businessman-icon-vector-male-avatar-profile-image-182095609.jpg'    });
+
+    e.addEventListener('click', function(e){
+        picture.src = 'https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Image-File.png'    });
+
+    f.addEventListener('click', function(e){
+        picture.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU'    });
+
+    clearButton.addEventListener('click', function(e){
+        picture.src = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'    });
+</script>
+</body>
+</html> 
